@@ -2,12 +2,12 @@
 # See README.md for instructions on how to do this
 require_relative './spec/fizzbuzz_spec.rb'
 def fizzbuzz(num)
-  if(num % 3 == 0)
-    return "Fizz"
+  if(num % 3 == 0 && num % 5 == 0)
+    return "FizzBuzz"
   elsif(num % 5 == 0)
     return "Buzz"
-  elsif(num % 3 == 0 && num % 5 == 0)
-    return "FizzBuzz"
+  elsif(num % 3 == 0)
+    return "Fizz"
   else
     return nil;
   end
